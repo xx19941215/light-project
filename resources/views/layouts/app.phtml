@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="<?php echo $this->staticUrl('css/app.css'); ?>">
+    <?php echo $this->insert('layouts/meta'); ?>
+    <?php $this->section('style'); ?><?php $this->stop(); ?>
+</head>
+<?php $this->section('main'); ?><?php $this->stop(); ?>
+<script src="<?php echo $this->staticUrl('js/app.js'); ?>"></script>
+<?php $this->section('script'); ?><?php $this->stop(); ?>
+</body>
+</html>
