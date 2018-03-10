@@ -9,9 +9,9 @@ const fs = require('fs');
 let options = {
     file: baseDir + '/resources/assets/sass/app.scss',
     includePaths: [path.resolve(baseDir, 'resources/assets/sass/')],
-    outFile: path.resolve(baseDir, 'public/css/app.css'),
+    outFile: path.resolve(baseDir, 'public/static/css/app.css'),
     sourceMap: true,
-    sourceMapFile: path.resolve(baseDir, 'public/css/app.css.map')
+    sourceMapFile: path.resolve(baseDir, 'public/static/css/app.css.map')
 };
 
 function callback(err, result) {

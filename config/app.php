@@ -1,13 +1,7 @@
 <?php
 
 return [
-    "Blog\\Auth\\" => [
-        "dir" => "/app/blog/auth"
+    "Demo\\Startup\\" => [
+        "dir" => "/app/demo/startup"
     ],
-    "Blog\\Index\\" => [
-        "dir" => "/app/blog/index"
-    ],
-    "Blog\\Post\\" => [
-        "dir" => "/app/blog/post"
-    ]
 ];

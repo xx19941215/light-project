@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-	"xx19941215/light-framework": "1.1.0"
+	"xx19941215/light-framework": "1.1.2"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*",
@@ -19,6 +19,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Demo\\Startup\\": "app/demo/startup/src"
         },
         "files": [
         ]

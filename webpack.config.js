@@ -9,7 +9,7 @@ module.exports = (env) => {
         output: {
             filename: '[name].js',
             chunkFilename: '[hash].js',
-            path: path.resolve(__dirname, 'public/js')
+            path: path.resolve(__dirname, 'public/static/js')
         },
         module: {
             rules: [

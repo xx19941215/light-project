@@ -1,0 +1,10 @@
+<?php
+$this
+    ->site('www')
+    ->access('public')
+    ->get(
+        '/',
+        'index',
+        'Demo\Startup\Index\Ui\IndexController@show'
+    )
+    ;

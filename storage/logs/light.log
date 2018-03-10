@@ -1,0 +1,72 @@
+[2018-03-10 02:50:21] light.ERROR: Exception: cannot find host www.light-project.test in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Http/SiteManager.php:21
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Http/Request.php(71): Light\Http\SiteManager->getSite('www.light-proje...')
+#1 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Routing/Router.php(61): Light\Http\Request->getSite()
+#2 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(40): Light\Routing\Router->dispatch(Object(Light\Http\Request))
+#3 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#4 {main}  
+[2018-03-10 02:50:22] light.ERROR: Exception: cannot find host www.light-project.test in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Http/SiteManager.php:21
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Http/Request.php(71): Light\Http\SiteManager->getSite('www.light-proje...')
+#1 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Routing/Router.php(61): Light\Http\Request->getSite()
+#2 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(40): Light\Routing\Router->dispatch(Object(Light\Http\Request))
+#3 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#4 {main}  
+[2018-03-10 02:50:49] light.ERROR: Light\Routing\Exceptions\RouteNotFoundException: route not found in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Routing/Router.php:71
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(40): Light\Routing\Router->dispatch(Object(Light\Http\Request))
+#1 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#2 {main}  
+[2018-03-10 02:50:49] light.ERROR: Light\Routing\Exceptions\RouteNotFoundException: route not found in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Routing/Router.php:71
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(40): Light\Routing\Router->dispatch(Object(Light\Http\Request))
+#1 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#2 {main}  
+[2018-03-10 02:51:35] light.ERROR: ReflectionException: Class Demo\Index\Ui\IndexController does not exist in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php:68
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(68): ReflectionClass->__construct('Demo\\Index\\Ui\\I...')
+#1 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(40): Light\Container\Container->build('Demo\\Index\\Ui\\I...', Array)
+#2 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Foundation/App.php(65): Light\Container\Container->make('Demo\\Index\\Ui\\I...', Array)
+#3 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(71): Light\Foundation\App->make('Demo\\Index\\Ui\\I...')
+#4 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(44): Light\Foundation\App->callControllerAction(Object(Light\Http\Request))
+#5 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#6 {main}  
+[2018-03-10 02:52:48] light.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Class 'Demo\Index\Ui\ControllerBase' not found in /Users/xiao/Code/light-project/app/demo/startup/src/Index/Ui/IndexController.php:6
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RegistersExceptionHandlers.php(29): Light\Foundation\App->handleShutdown()
+#1 [internal function]: Light\Foundation\App->Light\Concerns\{closure}()
+#2 {main}  
+[2018-03-10 02:53:09] light.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Class 'Demo\Index\Ui\ControllerBase' not found in /Users/xiao/Code/light-project/app/demo/startup/src/Index/Ui/IndexController.php:6
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RegistersExceptionHandlers.php(29): Light\Foundation\App->handleShutdown()
+#1 [internal function]: Light\Foundation\App->Light\Concerns\{closure}()
+#2 {main}  
+[2018-03-10 02:53:26] light.ERROR: Exception: not found in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php:73
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(44): Light\Foundation\App->callControllerAction(Object(Light\Http\Request))
+#1 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#2 {main}  
+[2018-03-10 02:54:18] light.ERROR: PDOException: SQLSTATE[HY000] [1049] Unknown database 'light' in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Database/DatabaseManager.php:55
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Database/DatabaseManager.php(55): PDO->__construct('mysql:host=loca...', 'root', 'qwertyuiop', Array)
+#1 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Foundation/App.php(124): Light\Database\DatabaseManager->connect('meta')
+#2 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(65): Light\Foundation\App->Light\Foundation\{closure}(Object(Light\Foundation\App), 'meta')
+#3 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(40): Light\Container\Container->build(Object(Closure), 'meta')
+#4 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Foundation/App.php(65): Light\Container\Container->make('db.connection', 'meta')
+#5 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Foundation/App.php(97): Light\Foundation\App->make('db.connection', 'meta')
+#6 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(65): Light\Foundation\App->Light\Foundation\{closure}(Object(Light\Foundation\App), Array)
+#7 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(40): Light\Container\Container->build(Object(Closure), Array)
+#8 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Foundation/App.php(65): Light\Container\Container->make('meta', Array)
+#9 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Contract/Ui/ControllerBase.php(15): Light\Foundation\App->make('meta')
+#10 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Contract/Ui/ControllerBase.php(34): Light\Contract\Ui\ControllerBase->getMeta()
+#11 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Contract/Ui/ControllerBase.php(20): Light\Contract\Ui\ControllerBase->render('page/index/inde...', Array)
+#12 /Users/xiao/Code/light-project/app/demo/startup/src/Index/Ui/IndexController.php(8): Light\Contract\Ui\ControllerBase->view('page/index/inde...')
+#13 [internal function]: Demo\Startup\Index\Ui\IndexController->show()
+#14 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/BoundMethod.php(15): call_user_func_array(Array, Array)
+#15 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/BoundMethod.php(39): Light\Container\BoundMethod::Light\Container\{closure}()
+#16 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/BoundMethod.php(17): Light\Container\BoundMethod::callBoundMethod(Object(Light\Foundation\App), Array, Object(Closure))
+#17 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Container/Container.php(177): Light\Container\BoundMethod::call(Object(Light\Foundation\App), Array, Array, NULL)
+#18 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(76): Light\Container\Container->call(Array)
+#19 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(44): Light\Foundation\App->callControllerAction(Object(Light\Http\Request))
+#20 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#21 {main}  
