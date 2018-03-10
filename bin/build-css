@@ -5,6 +5,8 @@ const sass = require('node-sass');
 const path = require('path');
 const baseDir = path.resolve(__dirname, './../')
 const fs = require('fs');
+const Emitter = require('events').EventEmitter;
+const chalk = require('chalk');
 
 let options = {
     file: baseDir + '/resources/assets/sass/app.scss',
@@ -26,18 +28,40 @@ function err() {
 
 }
 
+
+function getEmitter() {
+    var emitter = new Emitter();
+    emitter.on('error', function (err) {
+        console.log(err);
+        process.exit(1);
+    });
+
+    emitter.on('warn', function (data) {
+        console.warn(data);
+    });
+
+
+    return emitter;
+};
+
 function success(result) {
+    let emitter = getEmitter();
+    emitter.emit('warn', chalk.green('Rendering Complete, saving .css file...'));
     fs.writeFile(options.outFile, result.css.toString(), err => {
         if (err) {
-            console.log(err);
+            return emitter.emit('error', chalk.red(err));
         }
     })
+
+    emitter.emit('warn', chalk.green('Wrote CSS to ' + options.outFile));
 
     if (options.sourceMap) {
         fs.writeFile(options.sourceMapFile, result.map, err => {
             if (err) {
-                console.log(err);
+                return emitter.emit('error', chalk.red(err));
             }
+
+            emitter.emit('warn', chalk.green('Wrote Source Map to ' + options.sourceMapFile));
         })
     }
 

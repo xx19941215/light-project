@@ -8,7 +8,9 @@
     "build:css": "./bin/build-css",
     "build:js": "webpack",
     "phpcs": "./vendor/bin/phpcs --report=full --standard=psr2 --extensions=php app/ light/",
-    "lint": "npm run phpcs"
+    "lint": "npm run phpcs",
+    "watch:js": "onchange 'resources/assets/js/**/*.js' 'resources/assets/js/**/*.vue' -- webpack",
+    "watch:css": "onchange 'resources/assets/sass/**/*.scss' -- ./bin/build-css"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "chalk": "^2.3.2",
+    "onchange": "^3.3.0"
   }
 }
