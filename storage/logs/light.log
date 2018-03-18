@@ -70,3 +70,8 @@ Stack trace:
 #19 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(44): Light\Foundation\App->callControllerAction(Object(Light\Http\Request))
 #20 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
 #21 {main}  
+[2018-03-18 08:38:01] light.ERROR: Light\Routing\Exceptions\RouteNotFoundException: route not found in /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Routing/Router.php:71
+Stack trace:
+#0 /Users/xiao/Code/light-project/vendor/xx19941215/light-framework/src/Concerns/RoutesRequest.php(40): Light\Routing\Router->dispatch(Object(Light\Http\Request))
+#1 /Users/xiao/Code/light-project/public/index.php(14): Light\Foundation\App->handle(Object(Light\Http\Request))
+#2 {main}  
